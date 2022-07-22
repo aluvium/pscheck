@@ -1,5 +1,4 @@
 #!/bin/bash
-
 ##################### VARS
 ## Predefine -c count time, -t time deley, -u current user
 C=9999999999
@@ -27,7 +26,6 @@ if [ "$U_VA" = false ] ; then
 fi
 }
 
-## Pgrep function, i assume we want all live processes but without childs
 ps_check() {
     if [ $U == any ] ; then
         NR=$(pgrep -x $EXE_NAME --count)
